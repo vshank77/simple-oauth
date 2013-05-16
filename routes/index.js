@@ -11,7 +11,7 @@ exports.init = function(app) {
 function _index(req, res) {
     res.render('index',
         {
-            "title": 'Polyglotted Authorization Registration',
+            "title": 'GitHub Authorization Registration',
             "state": new Date().getTime(),
             "gitHubServer": gitHubServer,
             "gitHubServerProtocol": gitHubServerProtocol

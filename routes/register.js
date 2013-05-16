@@ -65,7 +65,7 @@ function _register(req, res) {
  
             res.render('result',
                 {
-                    "title": "Polyglotted Authorization Result",
+                    "title": "GitHub Authorization Result",
                     "token": error ? "" : accessToken,
                     "type": error ? "" : tokenType,
                     "error": error || null

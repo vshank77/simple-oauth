@@ -20,7 +20,7 @@ function _oauth(req, res) {
 
     res.render('oauth',
         {
-            "title": 'Polyglotted Authorization Retrieval',
+            "title": 'GitHub Authorization Retrieval',
             "code": code,
             "state": state
         }

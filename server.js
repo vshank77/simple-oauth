@@ -3,6 +3,7 @@
 var express = require("express")
     , routes = require("./routes")
     , oauth = require("./routes/oauth")
+    , register = require("./routes/register")
     , http = require("http")
     , path = require("path")
     , config = require("nconf")
@@ -76,6 +77,7 @@ var SampleApp = function() {
  
         routes.init(self.app);
         oauth.init(self.app);
+        register.init(self.app);
     };
 
     self.init = function() {
