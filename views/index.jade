@@ -1,0 +1,19 @@
+extends header
+ 
+block content
+  h1 #{title}
+ 
+  div
+    form(action="#{gitHubServerProtocol}://#{gitHubServer}/login/oauth/authorize", method="get")
+        div
+            p
+                label
+                    | Client ID:
+                    input(name="client_id", type="text", value="#{client_id}")
+            p
+                label
+                    | Access Scope:
+                    input(name="scope", type="text", value="user,repo,repo:status")
+            input(name="state", type="hidden", value="#{state}")
+        div#buttons
+            input(type="submit", value="Register")

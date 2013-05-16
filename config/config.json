@@ -1,0 +1,13 @@
+{
+    "port": 8080,
+ 
+    "github": {
+        "host"  : "github.com",
+        "protocol": "https"
+    },
+ 
+    "oAuth": {
+        "clientId"    : "929a13ddb382c5e29271",
+        "clientSecret": "d8dceb7352cd63fe2d6a9d364ddc3b8846893c54"
+    }
+}

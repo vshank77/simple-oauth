@@ -1,0 +1,22 @@
+extends header
+ 
+block content
+  h1 #{title}
+ 
+  div(id="results")
+    - if (error)
+        div(class="error")
+            p Failed to obtain Authorization Token: #{error}
+    - else if (token)
+        div
+            p Authorization Token of type (#{type})
+            pre #{token}
+    - else
+        div
+            p
+            | Please try
+            | a(href="/") again to register a token
+ 
+    - if (error || !token)
+        div
+            a(href="/", title="Home") Please try again
