@@ -4,10 +4,5 @@
     "github": {
         "host"  : "github.com",
         "protocol": "https"
-    },
- 
-    "oAuth": {
-        "clientId"    : "24e1296f87239e26e833",
-        "clientSecret": "c2106a1207399f432c8abe2107bad35535bdfb58"
     }
 }

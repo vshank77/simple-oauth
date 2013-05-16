@@ -1,0 +1,26 @@
+extends header
+ 
+block content
+  h1 #{title}
+ 
+  div
+    form(action="register", method="get")
+        div
+            p
+                label
+                    | Client ID:
+                    input(name="client_id", type="text", value="")
+            p
+                label
+                    | Client Secret:
+                    input(name="client_secret", type="text", value="")
+            p
+                label
+                    | Code:
+                    input(name="code", type="text", value="#{code}")
+            p
+                label
+                    | State:
+                    input(name="state", type="text", value="#{state}")
+        div#buttons
+            input(type="submit", value="Retrieve Auth")

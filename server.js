@@ -57,8 +57,6 @@ var SampleApp = function() {
         
         self.app.configure(function () {
             self.app.set('port', self.port);
-            self.app.set("clientId", config.get("oAuth:clientId"));
-            self.app.set("clientSecret", config.get("oAuth:clientSecret"));
             self.app.set("gitHubServer", config.get("github:host"));
             self.app.set("gitHubServerProtocol", config.get("github:protocol"));
             self.app.set('views', __dirname + '/views');
